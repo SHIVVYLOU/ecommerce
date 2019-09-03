@@ -22,7 +22,7 @@ SECRET_KEY = 'bi6@b(9cet7qbrq)@0k%^w*@9pu@k8telu#vqghlch@b@xks+4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [os.environ.get('C9_HOSTNAME'), '127.0.0.1']
+ALLOWED_HOSTS = [os.environ.get('C9_HOSTNAME'), '127.0.0.1', '48a7fcde4f3b47f6a6593e0455001bfa.vfs.cloud9.us-east-1.amazonaws.com']
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django_forms_bootstrap',
     'accounts',
     'products',
+    'cart'
 ]
 
 MIDDLEWARE = [
